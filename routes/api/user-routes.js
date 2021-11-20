@@ -105,7 +105,7 @@ router.post('/', (req, res) =>
     }
     catch (error)
     {
-      console.log(error);
+      console.log(error, "message error");
     }
   };
 });
