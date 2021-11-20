@@ -61,6 +61,7 @@ router.post('/', (req, res) =>
         req.session.username = dbUserData.username;
         req.session.loggedIn = true;
         res.json(dbUserData);
+        console.log(dbUserData);
       });
       sendEmailNotificaiton();
     });
@@ -75,8 +76,8 @@ router.post('/', (req, res) =>
         port: 465,
         secure: true,
         auth: {
-          user: "goatmeattop5@gmail.com",
-          pass: "1234!@#$qwer"
+          user: "sdillontest2@gmail.com",
+          pass: "TestPassword"
         }
       }); 
 
